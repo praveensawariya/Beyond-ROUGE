@@ -1,0 +1,17 @@
+# Beyond ROUGE pipeline (Python 3.10+). Versions are not pinned: install the
+# current compatible releases. For a CPU-only install (smoke tests only),
+# install a CPU build of torch as documented by PyTorch for your platform.
+torch
+transformers
+datasets
+sentence-transformers
+huggingface-hub
+pyarrow
+numpy
+pandas
+scikit-learn
+scipy
+rouge-score
+bert-score
+nltk
+matplotlib

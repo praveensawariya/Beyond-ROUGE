@@ -1,0 +1,11 @@
+# Checkpoints, data caches, and generated outputs are not committed.
+models/
+data_cache/
+results/
+results_*/
+*.jsonl
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store

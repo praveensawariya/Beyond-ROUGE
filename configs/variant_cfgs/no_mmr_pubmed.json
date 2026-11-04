@@ -1,0 +1,8 @@
+{
+  "best": {
+    "lambda_rel": 0.9,
+    "lead_bias": 0.06,
+    "target_words": 180,
+    "use_mmr": false
+  }
+}
