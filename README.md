@@ -40,6 +40,7 @@ budget, three seeds (7, 11, 23) — so the effect of extractive pre-filtering is
 | `code/hyb_gpu.py` | GPU enforcement / environment check (fails loudly instead of silently running on CPU) |
 | `configs/` | Tuned extractor configurations: arXiv λ = 0.75, lead bias 0.2; PubMed λ = 0.9, lead bias 0.06; target 180 words; plus single-factor ablation variants |
 | `tests/test_smoke.py` | CPU-only smoke tests (no model downloads, no GPU) |
+| `human_eval/` | Rating sheets behind paper §8.2 / Table 6 (100 documents per dataset, two raters), the rater instructions, and the deblinding mapping — see `human_eval/README.md` |
 
 ## Requirements
 
@@ -110,8 +111,10 @@ correction; everything else in the analysis scripts is labelled descriptive or e
   (see `.gitignore`).
 - **Prediction files, score tables, and the authors' results package.** These are the paper's reported outputs, not
   code; regenerate them with the workflow above.
-- **Human-evaluation rating sheets.** The conducted evaluation (100 documents per dataset, two raters) is reported
-  in the paper §8.2 as conducted but unreliable and is not used for any system claim. Rating sheets are not included.
+- **Human-evaluation rating sheets.** These **are** included, in `human_eval/` (sheets, instructions, and
+  deblinding) — see that folder's README for how Table 6 reproduces and for the paper's reliability verdict
+  (conducted but unreliable; not used for any system claim). The 100-document source-article files are not
+  included (public dataset texts; not needed for any §8.2 number).
 - **The original Drive/Colab notebook.** The `.py` files here are the code that notebook embedded (version
   `v9.1-clean`), cleaned as described in `CLEANING.md`. The notebook itself, with its Drive mounts, is not included.
 - **Dropped comparisons.** Training/generation scripts for a comparison dropped after the checkpoint audit are
