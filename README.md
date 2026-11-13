@@ -41,6 +41,7 @@ budget, three seeds (7, 11, 23) — so the effect of extractive pre-filtering is
 | `configs/` | Tuned extractor configurations: arXiv λ = 0.75, lead bias 0.2; PubMed λ = 0.9, lead bias 0.06; target 180 words; plus single-factor ablation variants |
 | `tests/test_smoke.py` | CPU-only smoke tests (no model downloads, no GPU) |
 | `human_eval/` | Rating sheets behind paper §8.2 / Table 6 (100 documents per dataset, two raters), the rater instructions, and the deblinding mapping — see `human_eval/README.md` |
+| `analysis/` | Round-2 revision analyses (§5.2 document-level correlation; §5.5c copy-adjusted Faith-ZS; regenerated Figures 1–2) with their outputs — see `analysis/README.md`. Inputs are the authors' per-sample tables, not in this repo. |
 
 ## Requirements
 
